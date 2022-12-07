@@ -54,7 +54,6 @@ function findByArtist(artist, array) {
     let result = [];
     for (x = 0; x < array.length; x++) {
         if (artist == array[x].artist) {
-            console.log(artist);
             result.push(artist)
             return result;
         }
@@ -62,6 +61,16 @@ function findByArtist(artist, array) {
     return [];
 }
 console.log(findByArtist('Mac Miller', collection));
+console.log(findByArtist('XXXTENTACION', collection));
+console.log(findByArtist('Lil Wayne', collection));
+console.log(findByArtist('Trippie Redd', collection));
+console.log(findByArtist('A$AP Mob', collection));
+console.log(findByArtist('A$AP Rocky', collection));
+console.log(findByArtist('A$AP Rock', collection));
+console.log(findByArtist('Beyonce', collection));
+
+
+
 //### Stretch goals
 
 //- Create a function called `search`. This function should:
