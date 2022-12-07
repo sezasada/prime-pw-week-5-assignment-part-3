@@ -15,19 +15,31 @@ function addToCollection(title, artist, yearPublished) {
     collection.push(album);
     return album;
 }
-console.log(addToCollection('DRIP SEASON 4EVER', 'Gunna', '2022'));
-console.log(collection);
-
 //- Test the `addToCollection` function:
 //  - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
 //  - Console.log each album as added using the returned value.
 //  - After all are added, console.log the `collection` array.
-
+console.log(addToCollection('Revenge', 'XXXTENTACION', '2016'));
+console.log(addToCollection('The Carter IV', 'Lil Wayne', '2011'));
+console.log(addToCollection('Swimming', 'Mac Miller', '2018'));
+console.log(addToCollection("LIFE'S A TRIP", 'Trippie Redd', '2018'));
+console.log(addToCollection('Cozy Tapes, Vol.2: Too Cozy', 'A$AP Mob', '2017'));
+console.log(addToCollection('LONG.LIVE.A$AP', 'A$AP Rocky', '2013'));
+console.log(collection);
 //- Add a function named `showCollection`. This function should:
 //  - Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
 //  - Console.log the number of items in the array.
 //  - Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
-
+function showCollection(array) {
+    console.log(array.lenght);
+    for(let i = 0; i < array.length; i++) {
+        if(i < array.length) {
+            console.log(collection[i]);
+        }
+    }
+    
+}
+console.log(showCollection(collection));
 //- Test the `showCollection` function.
 
 //- Add a function named `findByArtist`. This function should:
