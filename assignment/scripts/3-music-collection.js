@@ -39,11 +39,12 @@ showCollection(forty);
 // in undefined. this is because there are no titles/artists/year published added to the array forty. 
 
 
-let result = [];
+
 function findByArtist(artist) {
+    let result = [];
     for (let i = 0; i < collection.length; i++) {
         if (artist == collection[i].artist) {
-            console.log(result.push(artist));
+            result.push(artist);
             return result;
         }
     }
@@ -56,6 +57,7 @@ console.log(findByArtist('A$AP Mob'));
 console.log(findByArtist('A$AP Rocky'));
 console.log(findByArtist('A$AP Rock'));
 console.log(findByArtist('Beyonce'));
+
 // artists that are in the collection array are logged to the console and added to the result array.
 // artists that are not in the collection array are not logged to the console, they return an empty array. 
 
