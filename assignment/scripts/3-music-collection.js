@@ -49,26 +49,25 @@ showCollection(collection);
 //- Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are found.
 
 //> When testing your functions, write all tests in the JavaScript file!
-
-function findByArtist(artist, array) {
-    let result = [];
-    for (x = 0; x < array.length; x++) {
-        if (artist == array[x].artist) {
-            result.push(artist)
-            return result;
+let result = [];
+function findByArtist(artist) {
+    for (x = 0; x < collection.length; x++) {
+        if (artist == collection[x].artist) {
+            result.push(artist);
+            return artist;
         }
     }
     return [];
 }
-console.log(findByArtist('Mac Miller', collection));
-console.log(findByArtist('XXXTENTACION', collection));
-console.log(findByArtist('Lil Wayne', collection));
-console.log(findByArtist('Trippie Redd', collection));
-console.log(findByArtist('A$AP Mob', collection));
-console.log(findByArtist('A$AP Rocky', collection));
-console.log(findByArtist('A$AP Rock', collection));
-console.log(findByArtist('Beyonce', collection));
-
+console.log(findByArtist('Mac Miller'));
+console.log(findByArtist('XXXTENTACION'));
+console.log(findByArtist('Lil Wayne'));
+console.log(findByArtist('Trippie Redd'));
+console.log(findByArtist('A$AP Mob'));
+console.log(findByArtist('A$AP Rocky'));
+console.log(findByArtist('A$AP Rock'));
+console.log(findByArtist('Beyonce'));
+console.log(result);
 
 
 //### Stretch goals
