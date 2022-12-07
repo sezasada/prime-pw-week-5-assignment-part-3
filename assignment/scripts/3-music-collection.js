@@ -50,7 +50,18 @@ showCollection(collection);
 
 //> When testing your functions, write all tests in the JavaScript file!
 
-
+function findByArtist(artist, array) {
+    let result = [];
+    for (x = 0; x < array.length; x++) {
+        if (artist == array[x].artist) {
+            console.log(artist);
+            result.push(artist)
+            return result;
+        }
+    }
+    return [];
+}
+console.log(findByArtist('Mac Miller', collection));
 //### Stretch goals
 
 //- Create a function called `search`. This function should:
