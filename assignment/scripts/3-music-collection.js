@@ -43,13 +43,13 @@ showCollection(forty);
 function findByArtist(artist) {
     let result = [];
     for (let i = 0; i < collection.length; i++) {
-        if (artist == collection[i].artist) {
-            result.push(artist);
-            return result;
+        if (artist === collection[i].artist) {
+            result.push(collection[i])
         }
     }
-    return [];
+    return result;
 }
+
 console.log(findByArtist('Mac Miller'));
 console.log(findByArtist('XXXTENTACION'));
 console.log(findByArtist('Trippie Redd'));
