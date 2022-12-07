@@ -34,14 +34,13 @@ function showCollection(array) {
     console.log(array.lenght);
     for(let i = 0; i < array.length; i++) {
         if(i < array.length) {
-            console.log(collection[i]);
+            console.log(collection[i].title + ' by ' + collection[i].artist + ' published in ' + collection[i].yearPublished);
         }
     }
     
 }
-console.log(showCollection(collection));
+showCollection(collection);
 //- Test the `showCollection` function.
-
 //- Add a function named `findByArtist`. This function should:
 //  - Take in `artist` (a string) parameter
 //  - Create an array to hold any results, empty to start
